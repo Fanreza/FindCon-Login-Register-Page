@@ -36,6 +36,7 @@ section.box .left-content{
 	width: 50%;
 	height: 100%;
 	background: linear-gradient(179.98deg, #22577A 0.01%, #162F3F 99.99%);
+	position: relative;
 }
 
 section.box .left-content .logo{
@@ -68,6 +69,9 @@ section.box .left-content .text span{
 section.box .left-content .acc{
 	display: flex;
 	justify-content: space-between;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
 }
 
 
