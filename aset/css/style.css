@@ -23,7 +23,7 @@ body{
 
 
 /* ==================== Login Section ==================== */
-section.login-box{
+section.box{
 	width: 80%;
 	height: 80%;
 	background-color: #fff;
@@ -32,31 +32,27 @@ section.login-box{
 
 
 /* Left Content */
-section.login-box .left-content{
+section.box .left-content{
 	width: 50%;
 	height: 100%;
 	background: linear-gradient(179.98deg, #22577A 0.01%, #162F3F 99.99%);
 }
 
-section.login-box .left-content .logo{
+section.box .left-content .logo{
 	padding: 20px;
 }
 
-section.login-box .left-content .logo img{
+section.box .left-content .logo img{
 	width: 15%;
 	height: 100%;
 }
 
-section.login-box .left-content .banner{
+section.box .left-content .banner{
 	display: flex;
 	justify-content: center;
 }
 
-section.login-box .left-content .banner img{
-	width: 70%;
-}
-
-section.login-box .left-content .text{
+section.box .left-content .text{
 	margin: 20px auto;
 	text-align: center;
 	width: 50%;
@@ -65,11 +61,11 @@ section.login-box .left-content .text{
 	color: #fff;
 }
 
-section.login-box .left-content .text span{
+section.box .left-content .text span{
 	color: #38A3A5;
 }
 
-section.login-box .left-content .acc{
+section.box .left-content .acc{
 	display: flex;
 	justify-content: space-between;
 }
@@ -80,35 +76,37 @@ section.login-box .left-content .acc{
 
 
 /* Right Content */
-section.login-box .right-content{
+section.box .right-content{
 	width: 50%;
 	height: 100%;
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow-y: auto;
 }
 
-section.login-box .right-content .head{
+section.box .right-content .head{
 	text-align: center;
-	margin-top: 20px;
-	font-size: 1.3em;
+	width: 100%;
+	font-size: 1em;
 	color: #22577A;
 }
 
-section.login-box .right-content .input form{
+section.box .right-content .input form{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-section.login-box .right-content .input .email,
-section.login-box .right-content .input .password{
+section.box .right-content .input .input-box{
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 10px;
 	text-align: center;
 }
 
-section.login-box .right-content .input .email label,
-section.login-box .right-content .input .password label{
-	font-size: 1em;
+section.box .right-content .input .input-box label{
+	font-size: .8em;
 	width: 80%;
 	display: inline-block;
 	text-align: left;
@@ -116,8 +114,7 @@ section.login-box .right-content .input .password label{
 	font-weight: 700;
 }
 
-section.login-box .right-content .input .email input,
-section.login-box .right-content .input .password input{
+section.box .right-content .input .input-box input{
 	width: 80%;
 	height: 2.5em;
 	padding-left: 10px;
@@ -126,24 +123,23 @@ section.login-box .right-content .input .password input{
 	border: 2px solid white;
 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 5px;
-	font-size: 1em;
+	font-size: .8em;
 }
 
-section.login-box .right-content .input .email input:focus,
-section.login-box .right-content .input .password input:focus{
+section.box .right-content .input .input-box input:focus{
 	outline: none;
-	border: 2px solid #38A3A5;;
+	border: 2px solid #38A3A5;
 	box-shadow: none;
 }
 
-section.login-box .right-content .input .button{
-	margin-top: 20px;
+section.box .right-content .input .button{
+	margin-top: 10px;
 	width: 80%;
 }
 
-section.login-box .right-content .input .button button{
+section.box .right-content .input .button button{
 	width: 100%;
-	height: 3em;
+	height: 2.5em;
 	background-color: #38A3A5;
 	outline: none;
 	border: none;
@@ -155,49 +151,49 @@ section.login-box .right-content .input .button button{
 	transition: .2s;
 }
 
-section.login-box .right-content .input .button button:hover{
+section.box .right-content .input .button button:hover{
 	background-color: #22577A;
 	color: #38A3A5;
 }
 
-section.login-box .right-content .or{
+section.box .right-content .or{
 	margin: 10px auto;
 	width: 80%;
 }
 
-section.login-box .right-content .or p{
+section.box .right-content .or p{
 	display: flex;
  	flex-direction: row;
  	color: #BFBFBF;
  	font-weight: 700;
 }
 
-section.login-box .right-content .or p:before,
-section.login-box .right-content .or p:after{
+section.box .right-content .or p:before,
+section.box .right-content .or p:after{
 	content: "";
   	flex: 1 1;
   	border-bottom: 2px solid;
   	margin: auto;
 }
 
-section.login-box .right-content .or p:before{
+section.box .right-content .or p:before{
 	margin-right: 10px
 }
 
-section.login-box .right-content .or p:after{
+section.box .right-content .or p:after{
 	 margin-left: 10px
 }
 
-section.login-box .right-content .sosmed{
+section.box .right-content .sosmed{
 	display: flex;
 	width: 80%;	
 	justify-content: space-between;
 	margin: 0 auto;
 }
 
-section.login-box .right-content .google,
-section.login-box .right-content .facebook{
-	width: 45%;
+section.box .right-content .google,
+section.box .right-content .facebook{
+	width: 47%;
 	border-radius: 5px;
 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
 	display: flex;
@@ -212,22 +208,27 @@ section.login-box .right-content .facebook{
 	cursor: pointer;
 }
 
-section.login-box .right-content .google{
+section.box .right-content .google img,
+section.box .right-content .facebook img{
+	width: 10%;
+}
+
+section.box .right-content .google{
 	background: #fff;
 	color: #2F2E41;
 }
 
-section.login-box .right-content .facebook{
+section.box .right-content .facebook{
 	background: #1976D2;
 	color: #fff;
 }
 
-section.login-box .right-content .google p,
-section.login-box .right-content .facebook p{
+section.box .right-content .google p,
+section.box .right-content .facebook p{
 	margin-left: 10px;
 }
 
-section.login-box .right-content .bottom-text{
+section.box .right-content .bottom-text{
 	text-align: center;
 	margin-top: 20px;
 	font-weight: 600;
@@ -235,7 +236,47 @@ section.login-box .right-content .bottom-text{
 	font-size: .9em;
 }
 
-section.login-box .right-content .bottom-text span a{
+section.box .right-content .bottom-text span a{
 	color: #38A3A5;
 	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* ==================== Register Section ==================== */
+section.box .right-content .input .password-grup{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+section.box .right-content .input .password-grup .password.input-box{
+	width: 47%;
+}
+
+section.box .right-content .input .password-grup .password.input-box input{
+	width: 100%;
+}
+
+section.box .right-content .input .password-grup .password.input-box label{
+	width: 100%;
+}
+
+section.box .right-content .input .check{
+	margin-top: 10px;
+	width: 80%;
+}
+
+section.box .right-content .input .check label{
+	font-size: .65em;
+}
+
+section.box .right-content .input .check label span a{
+	color: #38A3A5;
 }
